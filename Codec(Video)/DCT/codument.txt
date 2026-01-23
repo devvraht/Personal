@@ -1,0 +1,26 @@
+Stage 1 – Color Transform
+
+✔ RGB → YCbCr
+✔ Luma / Chroma separation
+✔ BT.601 style behavior (OpenCV)
+
+Stage 2 – Chroma Subsampling
+
+✔ 4:2:0 subsampling
+✔ Separate chroma planes
+✔ Correct up/down sampling logic
+
+Stage 3 – Temporal Structure
+
+✔ GOP
+✔ I-frame / P-frame decision
+✔ Reference frame management
+✔ P-frame prediction (no motion yet – correct for now)
+
+Stage 4 – Transform (DCT)
+
+✔ 8×8 blocking
+✔ Level shift
+✔ Forward DCT
+✔ Inverse DCT
+✔ Reconstructed frame from transform domain
