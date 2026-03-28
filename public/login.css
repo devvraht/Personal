@@ -1,0 +1,76 @@
+/* Full page background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Centering the login container */
+.login-container {
+  display: flex;
+  justify-content: flex-end; /* keep box on right */
+  align-items: center;
+  height: 100%;
+  padding-right: 50px;
+}
+
+/* Login box styling */
+.login-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 12px;
+  width: 300px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center content */
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* Form fields */
+.login-box input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  text-align: center; /* center text inside */
+}
+
+/* Login button */
+.login-box button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1E90FF;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #0b63c6;
+}
+
+/* Error message */
+.error-msg {
+  margin-top: 15px;
+  color: #ff4c4c;
+  font-size: 14px;
+  text-align: center;
+}
